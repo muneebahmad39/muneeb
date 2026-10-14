@@ -1,0 +1,61 @@
+.container {
+  width: 90%;
+  margin: 30px auto;
+  font-family: Arial;
+}
+
+.student-form{
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: white;
+  /* width: 300px; */
+  padding: 20px;
+}
+.student-form input , .student-form textarea{
+padding: 10px;
+border-radius: 5px;
+width: 100%;
+width: 300px;
+}
+.heading {
+  background: #17233c;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+
+  background: green;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #e8f0fa;
+}
+
+.fifty {
+  color: green;
+  font-weight: bold;
+}
+
+.playing {
+  color: #2874b2;
+}
