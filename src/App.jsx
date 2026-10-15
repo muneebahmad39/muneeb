@@ -351,10 +351,11 @@
 
 
 
-import StudentsManager from './StudentsManager';
+// import MyCard from './components/MyCard';
+
 
 function App() {
-  return <StudentsManager />;
+  return <h1>testing</h1>;
 }
 
 export default App;

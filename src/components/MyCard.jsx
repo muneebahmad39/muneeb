@@ -1,16 +1,32 @@
-function MyCard({title , person}) {
+import { useState } from "react";
+
+function MyCard() {
+    const [names, setNames] = useState([
+        {
+            name: "ali",
+            course: "js",
+            isActive: true
+        },
+        {
+            name: "taha",
+            course: "react",
+            isActive: false
+        },
+        {
+            name: "rafey",
+            course: "node",
+            isActive: true
+        }   
+
+    ])
     return (
 
         <div className="card">
-            <div className="card-border-top">
-            </div>
-            <div className="img">
-                <img src="" alt="" />
-            </div>
-            <span> {person}</span>
-            <p className="job">{title}</p>
-            <button> Click
-            </button>
+            {names.map(
+                (n) => {
+                    return <h1>{n.course}</h1>
+                }
+            )}
         </div>
     )
 }
