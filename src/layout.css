@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff7ed;
+  color: #1a120b;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main {
+  flex: 1;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+.page-main section {
+  margin-bottom: 36px;
+}
+
+.page-main h1,
+.page-main h2 {
+  color: #ea580c;
+  margin-bottom: 10px;
+}
+
+.page-main p {
+  color: #7c2d12;
+  line-height: 1.6;
+}

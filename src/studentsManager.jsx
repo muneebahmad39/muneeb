@@ -53,7 +53,7 @@ const StudentsManager = () => {
   // 2. DELETE FUNCTION
   const handleDeleteStudent = (id) => {
     const updatedStudents = students.filter(
-      (student) => student.id !== id
+    (student) => student.id !== id
     );
 
     setStudents(updatedStudents);
