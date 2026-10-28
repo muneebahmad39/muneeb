@@ -1744,7 +1744,7 @@ export default function Newsports() {
           <div className="sv-hero-content">
             <span className="sv-pill">
               <i className="sv-dot" />
-              1 match live now
+              10 match live now
             </span>
 
             <h1>
@@ -1825,7 +1825,7 @@ export default function Newsports() {
           <div className="sv-section-heading">
             <div>
               <p className="sv-eyebrow">Match centre</p>
-              <h2>Scores & match updates</h2>
+              <h2>Scores & match updates.</h2>
             </div>
 
             <span className="sv-demo-label">Demo scores</span>
