@@ -1422,12 +1422,12 @@ import React, { useState } from "react";
 import "../sports.css";
 import batImg from "../../assets/bat.jpg"
 const sports = [
-  { name: "Cricket", icon: "🏏", note: "T20, ODI, Test" },
-  { name: "Football", icon: "⚽", note: "Leagues & cups" },
-  { name: "Basketball", icon: "🏀", note: "NBA & more" },
-  { name: "Tennis", icon: "🎾", note: "Grand Slams" },
-  { name: "Fitness", icon: "🏋️", note: "Train like a pro" },
-  { name: "Other Sports", icon: "🏆", note: "Records & honours" },
+  { name: "Cricket", icon:batImg, note: "T20, ODI, Test" },
+  { name: "Football", icon: batImg, note: "Leagues & cups" },
+  { name: "Basketball", icon: batImg, note: "NBA & more" },
+  { name: "Tennis", icon: batImg, note: "Grand Slams" },
+  { name: "Fitness", icon: batImg, note: "Train like a pro" },
+  { name: "Other Sports", icon: batImg, note: "Records & honours" },
 ];
 
 const initialProducts = [
@@ -1876,7 +1876,7 @@ export default function Newsports() {
                   setSearch(sport.name === "Other Sports" ? "" : sport.name)
                 }
               >
-                <span>{sport.icon}</span>
+                <span><img style={{width:"100%"}} src={sport.icon} alt={sport.name} /> </span>
                 <strong>{sport.name}</strong>
                 <small>{sport.note}</small>
               </a>
