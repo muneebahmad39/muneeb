@@ -1876,7 +1876,7 @@ export default function Newsports() {
                   setSearch(sport.name === "Other Sports" ? "" : sport.name)
                 }
               >
-                <span><img style={{width:"100%"}} src={sport.icon} alt={sport.name} /> </span>
+                <span><img style={{height:"100px"}} src={sport.icon} alt={sport.name} /> </span>
                 <strong>{sport.name}</strong>
                 <small>{sport.note}</small>
               </a>
@@ -1912,7 +1912,7 @@ export default function Newsports() {
             <div className="sv-product-grid">
               {filteredProducts.map((product) => (
                 <article className="sv-product-card" key={product.id}>
-                  <div className="sv-product-art"><img src={product.icon} alt={product.name} /></div>
+                  <div className="sv-product-art"><img src={product.icon} style={{ height:"100px"}}  alt={product.name} /></div>
 
                   <div className="sv-product-info">
                     <span className="sv-category">{product.category}</span>

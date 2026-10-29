@@ -204,6 +204,7 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link, useParams } from "react-router-dom";
 import "./App.css";
+import Newsports from "./components/pages/Newsport";
 
 const categories = [
   { id: "clothing", title: "Clothing", tag: "fashion" },
@@ -311,7 +312,7 @@ function App() {
 
       <main>
         <Routes>
-          <Route path="/" element={<Home addToCart={addToCart} />} />
+          <Route path="/" element={<Newsports addToCart={addToCart} />} />
           <Route
             path="/category/:category"
             element={<CategoryPage addToCart={addToCart} />}
