@@ -1420,7 +1420,7 @@
 
 import React, { useState } from "react";
 import "../sports.css";
-
+import batImg from "../../assets/bat.jpg"
 const sports = [
   { name: "Cricket", icon: "🏏", note: "T20, ODI, Test" },
   { name: "Football", icon: "⚽", note: "Leagues & cups" },
@@ -1431,11 +1431,11 @@ const sports = [
 ];
 
 const initialProducts = [
-  { id: 1, name: "Premium Cricket Bat", category: "Cricket", price: 8500, icon: "🏏" },
-  { id: 2, name: "Leather Cricket Ball", category: "Cricket", price: 1800, icon: "🔴" },
-  { id: 3, name: "Cricket Batting Gloves", category: "Cricket", price: 2500, icon: "🧤" },
-  { id: 4, name: "Football Match Ball", category: "Football", price: 3200, icon: "⚽" },
-  { id: 5, name: "Training Sports Shoes", category: "Fitness", price: 6200, icon: "👟" },
+  { id: 1, name: "Premium Cricket Bat", category: "Cricket", price: 8500, },
+  { id: 2, name: "Leather Cricket Ball", category: "Cricket", price: 1800, icon: batImg },
+  { id: 3, name: "Cricket Batting Gloves", category: "Cricket", price: 2500, icon: batImg },
+  { id: 4, name: "Football Match Ball", category: "Football", price: 3200, icon: batImg },
+  { id: 5, name: "Training Sports Shoes", category: "Fitness", price: 6200, icon: batImg },
 ];
 
 // Demo match data (real API se baad mein connect kar sakte hain)
@@ -1503,9 +1503,8 @@ const formatPrice = (price) =>
 function Team({ team, center, showScore }) {
   return (
     <div
-      className={`sv-team ${center ? "sv-team--center" : ""} ${
-        team.winner ? "is-winner" : ""
-      }`}
+      className={`sv-team ${center ? "sv-team--center" : ""} ${team.winner ? "is-winner" : ""
+        }`}
     >
       <span className="sv-crest">{team.code}</span>
       <span className="sv-team-name">{team.name}</span>
@@ -1913,7 +1912,7 @@ export default function Newsports() {
             <div className="sv-product-grid">
               {filteredProducts.map((product) => (
                 <article className="sv-product-card" key={product.id}>
-                  <div className="sv-product-art">{product.icon}</div>
+                  <div className="sv-product-art"><img src={product.icon} alt={product.name} /></div>
 
                   <div className="sv-product-info">
                     <span className="sv-category">{product.category}</span>
@@ -1952,7 +1951,7 @@ export default function Newsports() {
           <div className="sv-news-grid">
             {[
               {
-                icon: "🏏",
+
                 category: "Cricket",
                 title: "The big cricket match preview",
                 text: "Players and key moments to watch in the upcoming game.",
